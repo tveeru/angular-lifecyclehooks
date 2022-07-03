@@ -1,0 +1,8 @@
+<!-- <form [formGroup]="empForm" (ngSubmit)="onSubmit()">
+  <input type="text" formControlName="name" />
+
+  <button type="submit">Submit</button>
+</form> -->
+
+<input type="text" [(ngModel)]="empName" />
+<app-child [passInp]="empName"></app-child>
